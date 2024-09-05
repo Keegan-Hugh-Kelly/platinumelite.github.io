@@ -24,13 +24,6 @@ a {
     text-decoration: none;
 }
 
-.section-divider {
-    width: 50%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 /* Navbar */
 .navbar {
     display: flex;
@@ -38,10 +31,10 @@ a {
     align-items: center;
     background-color: transparent;
     padding: 10px 20px;
-    position: absolute; /* Change to absolute to overlay on hero */
+    position: absolute;
     top: 0;
-    width: 100%; /* Make navbar full width */
-    z-index: 100; /* Ensure it's above the hero */
+    width: 100%;
+    z-index: 100; 
 }
 
 #navbar-logo {
@@ -119,7 +112,7 @@ a {
 
 .section-divider {
     margin: 20px auto;
-    width: 60px;
+    width: 60%;
     border-top: 2px solid #fff;
 }
 
@@ -141,6 +134,7 @@ a {
     margin: 20px 0px;
 }
 
+/* Lists */
 .packages, .extras-list, .callout-fees {
     list-style: none;
     padding: 0;
@@ -193,7 +187,7 @@ a {
 }
 
 .card-video video {
-    width: 50%;
+    width: 75%;
     border-radius: 8px;
 }
 
@@ -203,9 +197,97 @@ a {
     flex-direction: row-reverse; /* Alternates to reverse direction for even containers */
 }
 
+/* Contact and Footer Styles */
+#contact-footer {
+    padding: 20px 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.contact-footer-left, .contact-footer-center, .contact-footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+#footer-logo {
+    width: 500px; /* Adjust logo size as needed */
+    margin-bottom: 10px;
+}
+
+.cta-phone {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.phone-icon {
+    margin-right: 8px;
+}
+
+.contact-footer-center {
+    display: flex;
+    flex-direction: column; /* Align nav links in a single column */
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li {
+    margin: 0px 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-links li {
+    margin: 10px;
+}
+
+.footer-nav-links a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.contact-footer-right p {
+    margin: 15px;
+    color: #bbb;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-
     .hero h1 {
         font-size: 36px;
     }
@@ -220,5 +302,18 @@ a {
 
     .card-content, .card-video {
         width: 100%;
+    }
+
+    #contact-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-footer-container {
+        flex-direction: column;
+    }
+
+    .contact-footer-left, .contact-footer-center, .contact-footer-right {
+        margin-bottom: 20px;
     }
 }

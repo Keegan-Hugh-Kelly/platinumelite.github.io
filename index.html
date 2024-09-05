@@ -14,7 +14,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <img src="Public/Images/logo-without-background.png" id="navbar-logo" />
+      <a href="index.html"><img src="Public/Images/logo-without-background.png" id="navbar-logo" /></a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#extras">Extras</a></li>
@@ -69,7 +69,7 @@
             </div>
           </div>
           <div class="card-video">
-            <video src="Public/videos/hero-video-5.mp4" autoplay></video>
+            <video src="Public/videos/hero-video-5.mp4" autoplay muted loop></video>
           </div>
         </div>
       </div>
@@ -79,6 +79,9 @@
     <section id="extras" class="section">
       <div class="cards-container">
         <div class="card-container">
+          <div class="card-video">
+            <video src="Public/videos/hero-video-3.mp4" autoplay muted loop></video>
+          </div>
           <div class="card-content">
             <h2>Extra Services We Offer</h2>
             <hr class="section-divider" />
@@ -97,44 +100,76 @@
               exclude a call-out fee.
             </p>
           </div>
-          <div class="card-video">
-            <video src="Public/videos/hero-video-3.mp4" autoplay></video>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- Maintenance Section -->
     <section id="maintenance" class="section">
-      <h2>Maintenance Detail</h2>
-      <hr class="section-divider" />
-      <p>
-        Book a weekly, biweekly, or monthly detail with us to keep your car in
-        pristine condition.
-      </p>
-      <ul class="callout-fees">
-        <li>Hout Bay: R25</li>
-        <li>Llandudno: R50</li>
-        <li>Camps Bay: R100</li>
-        <li>Sea Point: R150</li>
-        <li>Cape Town: R150</li>
-        <li>Constantia: R100</li>
-      </ul>
+      <div class="cards-container">
+        <div class="card-container">
+          <div class="card-content">
+            <h2>Maintenance Detail</h2>
+            <hr class="section-divider" />
+            <p>
+              Book a weekly, biweekly, or monthly detail with us to keep your
+              car in pristine condition.
+            </p>
+            <ul class="callout-fees">
+              <li>Hout Bay: R25</li>
+              <li>Llandudno: R50</li>
+              <li>Camps Bay: R100</li>
+              <li>Sea Point: R150</li>
+              <li>Cape Town: R150</li>
+              <li>Constantia: R100</li>
+            </ul>
+          </div>
+          <div class="card-video">
+            <video src="Public/videos/hero-video-7.mp4" autoplay muted loop></video>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <hr class="section-divider" />
-      <p><strong>Dane Wise</strong></p>
-      <p>Phone: +27-(0)-71 883 6829</p>
-      <p>Email: <a href="mailto:wisedane0@gmail.com">wisedane0@gmail.com</a></p>
-    </section>
+    <!-- Contact and Footer Section -->
+    <section id="contact-footer" class="section">
+      <div class="contact-footer-container">
+        <!-- Left Side -->
+        <div class="contact-footer-left">
+          <img
+            src="Public/Images/logo-without-background.png"
+            alt="Company Logo"
+            id="footer-logo"
+          />
+        </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Platinum Elite</p>
-    </footer>
+        <!-- Center -->
+        <div class="contact-footer-center">
+          <nav>
+            <ul class="footer-nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#extras">Extras</a></li>
+              <li><a href="#maintenance">Maintenance</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Right Side -->
+        <div class="contact-footer-right">
+          <a href="tel:+27-718836829" class="cta-phone">
+            <span class="phone-icon">📞</span> +27 71 883 6829
+          </a>
+          <p>
+            <a href="mailto:wisedane0@gmail.com" class="cta-email"
+              >✉️ wisedane0@gmail.com</a
+            >
+          </p>
+          <p>&copy; 2024 Platinum Elite</p>
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
