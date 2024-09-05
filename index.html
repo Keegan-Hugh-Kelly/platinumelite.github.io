@@ -14,7 +14,9 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <a href="index.html"><img src="Public/Images/logo-without-background.png" id="navbar-logo" /></a>
+      <a href="index.html"
+        ><img src="Public/Images/logo-without-background.png" id="navbar-logo"
+      /></a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#extras">Extras</a></li>
@@ -69,7 +71,12 @@
             </div>
           </div>
           <div class="card-video">
-            <video src="Public/videos/hero-video-5.mp4" autoplay muted loop></video>
+            <video
+              src="Public/videos/hero-video-5.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
           </div>
         </div>
       </div>
@@ -80,7 +87,12 @@
       <div class="cards-container">
         <div class="card-container">
           <div class="card-video">
-            <video src="Public/videos/hero-video-3.mp4" autoplay muted loop></video>
+            <video
+              src="Public/videos/hero-video-3.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
           </div>
           <div class="card-content">
             <h2>Extra Services We Offer</h2>
@@ -125,7 +137,12 @@
             </ul>
           </div>
           <div class="card-video">
-            <video src="Public/videos/hero-video-7.mp4" autoplay muted loop></video>
+            <video
+              src="Public/videos/hero-video-7.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
           </div>
         </div>
       </div>
@@ -171,6 +188,21 @@
       </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script nonce="githubkeegalix@2024">
+      // Function to randomly select a video
+      function getRandomVideo() {
+        // Get a random number between 1 and 6
+        const videoNumber = Math.floor(Math.random() * 6) + 1;
+        return `Public/videos/hero-video-${videoNumber}.mp4`;
+      }
+
+      // Set the video source when the page loads
+      window.onload = function () {
+        const videoElement = document.getElementById("hero-video");
+        videoElement.src = getRandomVideo();
+        videoElement.load(); // Load the new video
+      };
+    </script>
   </body>
 </html>
